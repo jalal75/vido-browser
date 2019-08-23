@@ -1,0 +1,25 @@
+<html>
+<body>
+
+<h2>Radio Buttons</h2>
+
+<form>
+<input type="hidden" name="form_name" value="weekly" />
+  <input class ="example" type="radio" name="action" value="opt-in-weekly" checked> week<br>
+  <input class ="example" type="radio" name="action" value="opt-in-monthly"> month<br>
+  <input type="submit" >
+</form> 
+
+</body>
+<script>
+console.log(document.getElementsByClassName("example"))
+document.getElementsByClassName("example")[0].addEventListener("change", function(){
+  console.log(this.value)
+});
+document.getElementsByClassName("example")[1].addEventListener("change", function(){
+  console.log(this.value)
+});
+
+ 
+</script>
+</html>
